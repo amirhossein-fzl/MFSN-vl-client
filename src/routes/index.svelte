@@ -1,6 +1,7 @@
 <script lang="ts">
     import Button from '$lib/Button.svelte';
-
+    import Icon from '$lib/Icon.svelte';
+    import UserIcon from '$icons/duotone/user.svg?raw';
 </script>
 
 <h1>Hello World</h1>
@@ -54,3 +55,8 @@
 <Button size="md" color="secondary" variant="flat">عباسزاده سامورایی</Button>
 <Button size="lg" color="secondary" variant="flat">عباسزاده سامورایی</Button>
 <Button size="lg" color="secondary" variant="flat" disabled>عباسزاده سامورایی</Button>
+
+<br />
+<div class="mt-10"></div>
+
+<Icon icon={UserIcon} size={100} class="text-primary-500" />
