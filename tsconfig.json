@@ -18,6 +18,9 @@
             ],
             "$icons/*": [
                 "src/icons/*"
+            ],
+            "$sections/*": [
+                "src/lib/sections/*"
             ]
         }
     }

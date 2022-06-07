@@ -20,6 +20,7 @@ const config = {
             resolve: {
                 alias: {
                     $icons: path.resolve('./src/icons'),
+                    $sections: path.resolve('./src/lib/sections'),
                 }
             }
         },
