@@ -41,7 +41,6 @@
     .btn-icon {
         -webkit-tap-highlight-color: transparent;
         @apply inline-flex rounded-full duration-300 justify-center items-center;
-        @apply font-medium leading-[1.75] tracking-[0.02857em];
 
         // Sizing
 
