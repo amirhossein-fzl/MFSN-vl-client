@@ -2,6 +2,7 @@
     import Button from '$lib/Button.svelte';
     import Icon from '$lib/Icon.svelte';
     import UserIcon from '$icons/duotone/user.svg?raw';
+    import IconButton from '$lib/IconButton.svelte';
 </script>
 
 <h1>Hello World</h1>
@@ -60,3 +61,45 @@
 <div class="mt-10"></div>
 
 <Icon icon={UserIcon} size={100} class="text-primary-500" />
+
+<br />
+<div class="mt-10"></div>
+
+<IconButton icon={UserIcon} color="primary" variant="contained" size="sm" />
+<IconButton icon={UserIcon} color="primary" variant="contained" size="md" />
+<IconButton icon={UserIcon} color="primary" variant="contained" size="lg" />
+
+<br />
+<div class="mt-10"></div>
+
+<IconButton icon={UserIcon} color="primary" variant="outlined" size="sm" />
+<IconButton icon={UserIcon} color="primary" variant="outlined" size="md" />
+<IconButton icon={UserIcon} color="primary" variant="outlined" size="lg" />
+
+<br />
+<div class="mt-10"></div>
+
+<IconButton icon={UserIcon} color="primary" variant="flat" size="sm" />
+<IconButton icon={UserIcon} color="primary" variant="flat" size="md" />
+<IconButton icon={UserIcon} color="primary" variant="flat" size="lg" />
+
+<br />
+<div class="mt-10"></div>
+
+<IconButton icon={UserIcon} color="secondary" variant="contained" size="sm" />
+<IconButton icon={UserIcon} color="secondary" variant="contained" size="md" />
+<IconButton icon={UserIcon} color="secondary" variant="contained" size="lg" />
+
+<br />
+<div class="mt-10"></div>
+
+<IconButton icon={UserIcon} color="secondary" variant="outlined" size="sm" />
+<IconButton icon={UserIcon} color="secondary" variant="outlined" size="md" />
+<IconButton icon={UserIcon} color="secondary" variant="outlined" size="lg" />
+
+<br />
+<div class="mt-10"></div>
+
+<IconButton icon={UserIcon} color="secondary" variant="flat" size="sm" />
+<IconButton icon={UserIcon} color="secondary" variant="flat" size="md" />
+<IconButton icon={UserIcon} color="secondary" variant="flat" size="lg" />
