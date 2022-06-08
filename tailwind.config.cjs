@@ -2,6 +2,7 @@ module.exports = {
     content: [
         './src/**/*.{svelte,html}',
     ],
+    darkMode: 'class',
     theme: {
         extend: {
             fontFamily: {
