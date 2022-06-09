@@ -3,11 +3,11 @@
     import Icon from '$lib/Icon.svelte';
     export let href: string | undefined = undefined;
     export let size: 'sm' | 'md' | 'lg' = 'md';
-    export let color: 'primary' | 'secondary' = 'primary';
+    export let color: 'primary' | 'secondary' | 'danger' = 'primary';
     export let variant: 'flat' | 'outlined' | 'contained' = 'contained';
     export let icon: string;
     let classNames: string = '';
-    export {classNames as class};
+    export { classNames as class };
 
     let tag: string = 'button';
     let color_pallate: string = color + '-' + variant;
@@ -27,13 +27,12 @@
             icon_size = 24;
             break;
         default:
-            icon_size = 20
+            icon_size = 20;
             break;
     }
-    
 </script>
 
-<svelte:element this={tag} {href} class={clsx('btn-icon', size, color_pallate, classNames)} on:click {...$$restProps} >
+<svelte:element this={tag} {href} class={clsx('btn-icon', size, color_pallate, classNames)} on:click {...$$restProps}>
     <Icon {icon} size={icon_size} />
 </svelte:element>
 
@@ -57,7 +56,6 @@
         }
 
         &.primary {
-
             &-contained {
                 @apply bg-primary-500 text-white;
                 &:hover {
@@ -90,7 +88,6 @@
         }
 
         &.secondary {
-
             &-contained {
                 @apply bg-secondary-500 text-white;
                 &:hover {
@@ -118,6 +115,38 @@
                 }
                 &:active {
                     @apply bg-secondary-200;
+                }
+            }
+        }
+
+        &.danger {
+            // &-contained {
+            //     @apply bg-secondary-500 text-white;
+            //     &:hover {
+            //         @apply bg-secondary-600;
+            //     }
+            //     &:active {
+            //         @apply bg-secondary-700;
+            //     }
+            // }
+
+            // &-outlined {
+            //     @apply border border-secondary-500 text-secondary-500;
+            //     &:hover {
+            //         @apply bg-secondary-500 border-secondary-500 text-white;
+            //     }
+            //     &:active {
+            //         @apply border-secondary-600 bg-secondary-600;
+            //     }
+            // }
+
+            &-flat {
+                @apply text-red-500;
+                &:hover {
+                    @apply bg-red-100;
+                }
+                &:active {
+                    @apply bg-red-200;
                 }
             }
         }

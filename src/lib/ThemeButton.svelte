@@ -5,6 +5,9 @@
     import { onMount } from 'svelte';
 
     let isDarkMode: boolean;
+    let classNames: string = '';
+
+    export { classNames as class };
 
     onMount(() => {
         isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -27,7 +30,7 @@
     };
 </script>
 
-<div class="ml-2">
+<div class={classNames}>
     <input type="checkbox" class="checkbox" id="checkbox" bind:checked={isDarkMode} on:change={handleToggleTheme} />
     <label for="checkbox" class="checkbox-label">
         <Icon icon={SunIcon} class="text-yellow-400" size={19} />
