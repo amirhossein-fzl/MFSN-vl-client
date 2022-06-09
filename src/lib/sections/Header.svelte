@@ -65,7 +65,7 @@
             <img src="/vercel.svg" class="w-[100px] h-auto" alt="LOGO" />
 
             <!-- Search box -->
-            <Col lg={5} class="hidden md:block">
+            <Col lg={5} md={6} class="hidden md:block">
                 <form class={clsx('search-box', search_box_focus && 'focus')} on:click={handle_search_box_focus} on:submit={(e) => e.preventDefault()}>
                     <input type="text" class="bg-transparent" placeholder="برای جست و جو ..." bind:this={search_input} on:focus={() => (search_box_focus = true)} on:blur={() => (search_box_focus = false)} />
                     <Button size="sm" class="mr-1">
